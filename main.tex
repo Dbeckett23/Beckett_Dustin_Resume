@@ -1,0 +1,166 @@
+\documentclass[]{cv-style}          
+\usepackage{pifont}
+\usepackage[absolute,overlay,showboxes]{textpos}
+\usepackage[document]{ragged2e}
+\usepackage{graphicx}
+
+\sethyphenation[variant=british]{english}{}
+
+\begin{document}
+\header{Dustin}{Beckett}
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION  -- In the aside, each new line forces a line break
+%----------------------------------------------------------------------------------------
+
+\begin{aside}
+%
+\begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+
+\section{Contact}
+\hspace{1mm}Address:
+\hspace{1mm}Chelsea, MI 48118
+\hspace{1mm}United States
+~
+\hspace{1mm}Cell:
+\hspace{1mm}+1 (734) 864 2001
+~
+\hspace{1mm}E-mail:
+\hspace{1mm}dustinbe@umich.edu
+~
+\hspace{1mm}Website:
+\hspace{1mm}www.dustin-beckett.com
+%
+~
+\section{Languages}
+\hspace{1mm}English native
+\hspace{1mm}Spanish intermediate
+%
+~
+\section{Programming Lang.}
+\hspace{1mm}\textbf{C/C++}
+\hspace{1mm}\textbf{Java}
+\hspace{1mm}\textbf{JavaScript}
+\hspace{1mm}PHP          
+\hspace{1mm}Assembly       
+\hspace{1mm}C\#          
+\hspace{1mm}SQL
+\hspace{1mm}\LaTeX
+%
+~
+\section{Development Skills}
+\hspace{1mm}Test Driven Development
+\hspace{1mm}Algorithms
+\hspace{1mm}Data Structures
+\hspace{1mm}Object-Oriented Prog.
+\hspace{1mm}DevOps
+\hspace{1mm}Agile
+%
+~
+\section{Technologies}
+\hspace{1mm}Git
+\hspace{1mm}Maven
+\hspace{1mm}Jenkins
+\hspace{1mm}Make
+~
+\section{Computer Skills}
+\hspace{1mm}IntelliJ IDEA
+\hspace{1mm}Linux
+\hspace{1mm}Windows OS
+\hspace{1mm}MacOS
+~
+\section{Business Skills}
+\hspace{1mm}Communication
+\hspace{1mm}Problem solving
+\hspace{1mm}Team player
+\hspace{1mm}Resilient
+\end{tabular*}
+\end{aside}
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2017--Now}
+{B.Sc. {\normalfont in Computer Science}}
+{University of Michigan - Ann Arbor}
+{Relevant courses: Algorithms \& Data Structures, Databases}
+{\vspace{-0.3cm}}
+%------------------------------------------------
+\entry
+{2015--2017}
+{A.Sc. {\normalfont in Computer Science - Programming in Java}}
+{Washtenaw Community College}
+
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\section{Experience}
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2019}
+{Genesys}
+{Indianapolis, Indiana}
+{Software Engineer, Intern\\
+Worked on the PureCloud plateform Public API team.
+\begin{itemize}
+    \item Improved the Public API's property management system by creating a class that handled retrieving properties from local YAML files and a Amazon DynamoDB instance
+    \item Explored new ways to automate version bumping using Jenkins and Grunt when making commits to a project's master branch
+    \item Developed my skills in a DevOps work environment by working on tickets and automating tasks such as building, testing, and deploying software
+    \item Built additions for software that had a codebase of over half a million lines of code
+    \item Accelerated the development process by using development tools such as Maven, Git, IntelliJ IDEA, and Jenkins
+\end{itemize}}
+%------------------------------------------------
+\entry
+{2018}
+{Undergraduate Research}
+{University of Michigan - Ann Arbor}
+{Research Assistant\\
+Installed and modified software on a server at the University of Michigan to be used by archaeologists in Italy. 
+\begin{itemize}
+    \item Satisfied design specifications by modifying existing archaeological software to match the requirements needed by archaeologists
+    \item Connected archaeological data by launching a website that allowed archaeologists to enter data at the dig site
+    \item Managed the SQL database that stored the data entered by archaeologists
+\end{itemize}}
+%------------------------------------------------
+\end{entrylist}
+%----------------------------------------------------------------------------------------
+%	PROJECT EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\section{Projects}
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2018}
+{SillyQL}
+{EECS 281}
+{Developed a program that acts as a relational database that can store large amounts of data and can be accessed quickly based on a given query.
+\begin{itemize}
+    \item Expanded my knowledge of how to solve different types of problems by utilizing the C++ Standard Template Library (STL)
+    \item Ensured rapid data access by using the C++ STL unordered map to search for data elements in the database
+    \item Utilized the speed of hashing to create a database that avoids a linear search to query a table or a set of tables in the database
+\end{itemize}}
+%------------------------------------------------
+\entry
+{2018}
+{Machine Learning Program}
+{EECS 280}
+{Developed a program that read in data from Piazza, a Q\&A web service, that used a version of Bayes' theorem, to predict which project label each question was asked in.
+\begin{itemize}
+    \item Predicted forum labels with a 75\% accuracy using the supervised learning method of machine learning
+    \item Improved my understanding of data structures, and how to apply them to solve different types of problems
+    \item Enhanced my ability to extract large amounts of data from files, and how to apply the extracted data to my program
+\end{itemize}}
+
+%------------------------------------------------
+\end{entrylist}
+%--------------------------------------------------------------------------------------
+\end{document}
