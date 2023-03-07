@@ -3,6 +3,8 @@
 \usepackage[absolute,overlay,showboxes]{textpos}
 \usepackage[document]{ragged2e}
 \usepackage{graphicx}
+\usepackage{fontawesome}
+\usepackage{hyperref}
 
 \sethyphenation[variant=british]{english}{}
 
@@ -18,50 +20,42 @@
 \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
 
 \section{Contact}
-\hspace{1mm}Address:
-\hspace{1mm}Chelsea, MI 48118
-\hspace{1mm}United States
-~
+
 \hspace{1mm}Cell:
-\hspace{1mm}+1 (734) 864 2001
+\hspace{1mm}+1 (734) 864-2001 
 ~
 \hspace{1mm}E-mail:
-\hspace{1mm}dustinbe@umich.edu
-~
-\hspace{1mm}Website:
-\hspace{1mm}www.dustin-beckett.com
-%
-~
-\section{Languages}
-\hspace{1mm}English native
-\hspace{1mm}Spanish intermediate
-%
+\hspace{1mm}DustinWBeckett@gmail.com
+% ~
+% \hspace{1mm}\href{www.linkedin.com/in/dustin-beckett}{LinkedIn}\hspace{1mm}\faLinkedinSquare
+
+
+% ~
+% \hspace{1mm}Website:
+% \hspace{1mm}www.dustin-beckett.com
 ~
 \section{Programming Lang.}
-\hspace{1mm}\textbf{C/C++}
 \hspace{1mm}\textbf{Java}
-\hspace{1mm}\textbf{JavaScript}
-\hspace{1mm}PHP          
-\hspace{1mm}Assembly       
-\hspace{1mm}C\#          
-\hspace{1mm}SQL
-\hspace{1mm}\LaTeX
+\hspace{1mm}Python
 %
 ~
-\section{Development Skills}
+\section{Skills}
+\hspace{1mm}Distributed Systems
 \hspace{1mm}Test Driven Development
+% \hspace{1mm}Object-Oriented Prog.
+\hspace{1mm}Agile Development
 \hspace{1mm}Algorithms
 \hspace{1mm}Data Structures
-\hspace{1mm}Object-Oriented Prog.
-\hspace{1mm}DevOps
-\hspace{1mm}Agile
 %
 ~
-\section{Technologies}
+\section{Tools}
 \hspace{1mm}Git
 \hspace{1mm}Maven
 \hspace{1mm}Jenkins
-\hspace{1mm}Make
+% \hspace{1mm}Make
+\hspace{1mm}AWS
+\hspace{1mm}New Relic
+\hspace{1mm}Sumo Logic
 ~
 \section{Computer Skills}
 \hspace{1mm}IntelliJ IDEA
@@ -74,36 +68,35 @@
 \hspace{1mm}Problem solving
 \hspace{1mm}Team player
 \hspace{1mm}Resilient
+~
+\section{Interests}
+\hspace{1mm}Rust
+\hspace{1mm}WebAssembly
+\hspace{1mm}Software Design
+\hspace{1mm}Vim
+
 \end{tabular*}
 \end{aside}
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
-
-\section{Education}
-
-\begin{entrylist}
-%------------------------------------------------
-\entry
-{2017--Now}
-{B.Sc. {\normalfont in Computer Science}}
-{University of Michigan - Ann Arbor}
-{Relevant courses: Algorithms \& Data Structures, Databases}
-{\vspace{-0.3cm}}
-%------------------------------------------------
-\entry
-{2015--2017}
-{A.Sc. {\normalfont in Computer Science - Programming in Java}}
-{Washtenaw Community College}
-
-%------------------------------------------------
-\end{entrylist}
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 \section{Experience}
 \begin{entrylist}
+%------------------------------------------------
+\entry
+{2020--Now}
+{Genesys}
+{Remote (Michigan)}
+{Software Engineer\\
+Worked on the Genesys Cloud Public API team.https://www.overleaf.com/project/5bfaeb95dd2484539c026ea8
+\begin{itemize}
+    \item Revamped our clients caching strategy by implementing automatic refresh and fallback logic
+    \item Implemented an AWS Lambda to handle scaling images and storing them in S3 as part of an on going migration
+    \item Remedied production PagerDuty alerts while on call using tools such as New Relic and Sumo Logic to determine the cause
+    \item Overhauled our platforms image APIs to be more efficient and user friendly by reducting the number of API calls and improving the response
+    \item Reviewed hundreds of pull requests as a primary reviewer for our public api repository
+\end{itemize}}
 %------------------------------------------------
 \entry
 {2019}
@@ -119,48 +112,86 @@ Worked on the PureCloud plateform Public API team.
     \item Accelerated the development process by using development tools such as Maven, Git, IntelliJ IDEA, and Jenkins
 \end{itemize}}
 %------------------------------------------------
-\entry
-{2018}
-{Undergraduate Research}
-{University of Michigan - Ann Arbor}
-{Research Assistant\\
-Installed and modified software on a server at the University of Michigan to be used by archaeologists in Italy. 
-\begin{itemize}
-    \item Satisfied design specifications by modifying existing archaeological software to match the requirements needed by archaeologists
-    \item Connected archaeological data by launching a website that allowed archaeologists to enter data at the dig site
-    \item Managed the SQL database that stored the data entered by archaeologists
-\end{itemize}}
+% \entry
+% {2018}
+% {Undergraduate Research}
+% {University of Michigan - Ann Arbor}
+% {Research Assistant\\
+% Installed and modified software on a server at the University of Michigan to be used by archaeologists in Italy. 
+% \begin{itemize}
+%     \item Satisfied design specifications by modifying existing archaeological software to match the requirements needed by archaeologists
+%     \item Connected archaeological data by launching a website that allowed archaeologists to enter data at the dig site
+%     \item Managed the SQL database that stored the data entered by archaeologists
+% \end{itemize}}
 %------------------------------------------------
 \end{entrylist}
+
+
 %----------------------------------------------------------------------------------------
 %	PROJECT EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 \section{Projects}
 \begin{entrylist}
+
+% %------------------------------------------------
+\entry
+{2023}
+{Password Manager}
+{Rust}
+{Developed a program to securely store password using rust\\
+\begin{itemize}
+    \item 
+    \item 
+    \item 
+\end{itemize}}
+
+% %------------------------------------------------
+% \entry
+% {2018}
+% {SillyQL}
+% {EECS 281}
+% {Developed a program that acts as a relational database that can store large amounts of data and can be accessed quickly based on a given query.
+% \begin{itemize}
+%     \item Expanded my knowledge of how to solve different types of problems by utilizing the C++ Standard Template Library (STL)
+%     \item Ensured rapid data access by using the C++ STL unordered map to search for data elements in the database
+%     \item Utilized the speed of hashing to create a database that avoids a linear search to query a table or a set of tables in the database
+% \end{itemize}}
+% %------------------------------------------------
+% \entry
+% {2018}
+% {Machine Learning Program}
+% {EECS 280}
+% {Developed a program that read in data from Piazza, a Q\&A web service, that used a version of Bayes' theorem, to predict which project label each question was asked in.
+% \begin{itemize}
+%     \item Predicted forum labels with a 75\% accuracy using the supervised learning method of machine learning
+%     \item Improved my understanding of data structures, and how to apply them to solve different types of problems
+%     \item Enhanced my ability to extract large amounts of data from files, and how to apply the extracted data to my program
+% \end{itemize}}
+
+% %------------------------------------------------
+\end{entrylist}
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{entrylist}
 %------------------------------------------------
 \entry
-{2018}
-{SillyQL}
-{EECS 281}
-{Developed a program that acts as a relational database that can store large amounts of data and can be accessed quickly based on a given query.
-\begin{itemize}
-    \item Expanded my knowledge of how to solve different types of problems by utilizing the C++ Standard Template Library (STL)
-    \item Ensured rapid data access by using the C++ STL unordered map to search for data elements in the database
-    \item Utilized the speed of hashing to create a database that avoids a linear search to query a table or a set of tables in the database
-\end{itemize}}
+{2017--2020}
+{B.Sc. {\normalfont in Computer Science}}
+{University of Michigan - Ann Arbor}
+{Relevant courses: Algorithms \& Data Structures, Databases}
+{\vspace{-0.3cm}}
 %------------------------------------------------
 \entry
-{2018}
-{Machine Learning Program}
-{EECS 280}
-{Developed a program that read in data from Piazza, a Q\&A web service, that used a version of Bayes' theorem, to predict which project label each question was asked in.
-\begin{itemize}
-    \item Predicted forum labels with a 75\% accuracy using the supervised learning method of machine learning
-    \item Improved my understanding of data structures, and how to apply them to solve different types of problems
-    \item Enhanced my ability to extract large amounts of data from files, and how to apply the extracted data to my program
-\end{itemize}}
+{2015--2017}
+{A.Sc. {\normalfont in Computer Science - Programming in Java}}
+{Washtenaw Community College}
 
 %------------------------------------------------
 \end{entrylist}
+
 %--------------------------------------------------------------------------------------
 \end{document}

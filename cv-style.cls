@@ -181,7 +181,7 @@
 % Side block %
 %----------------------------------------------------------------------------------------
 
-\setlength{\TPHorizModule}{1cm}
+\setlength{\TPHorizModule}{7mm}
 \setlength{\TPVertModule}{1cm}
 \newenvironment{aside}{%
   \let\oldsection\section
