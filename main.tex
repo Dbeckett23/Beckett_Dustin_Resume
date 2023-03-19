@@ -28,8 +28,6 @@
 \hspace{1mm}DustinWBeckett@gmail.com
 % ~
 % \hspace{1mm}\href{www.linkedin.com/in/dustin-beckett}{LinkedIn}\hspace{1mm}\faLinkedinSquare
-
-
 % ~
 % \hspace{1mm}Website:
 % \hspace{1mm}www.dustin-beckett.com
@@ -56,18 +54,20 @@
 \hspace{1mm}AWS
 \hspace{1mm}New Relic
 \hspace{1mm}Sumo Logic
+\hspace{1mm}IntelliJ IDEA
 ~
 \section{Computer Skills}
-\hspace{1mm}IntelliJ IDEA
 \hspace{1mm}Linux
-\hspace{1mm}Windows OS
+\hspace{1mm}Windows
 \hspace{1mm}MacOS
 ~
-\section{Business Skills}
+\section{Soft Skills}
 \hspace{1mm}Communication
 \hspace{1mm}Problem solving
 \hspace{1mm}Team player
 \hspace{1mm}Resilient
+\hspace{1mm}Willingness to Learn
+\hspace{1mm}Dependability
 ~
 \section{Interests}
 \hspace{1mm}Rust
@@ -89,13 +89,16 @@
 {Genesys}
 {Remote (Michigan)}
 {Software Engineer\\
-Worked on the Genesys Cloud Public API team.https://www.overleaf.com/project/5bfaeb95dd2484539c026ea8
+Worked on the Genesys Cloud Public API team.
 \begin{itemize}
-    \item Revamped our clients caching strategy by implementing automatic refresh and fallback logic
-    \item Implemented an AWS Lambda to handle scaling images and storing them in S3 as part of an on going migration
-    \item Remedied production PagerDuty alerts while on call using tools such as New Relic and Sumo Logic to determine the cause
-    \item Overhauled our platforms image APIs to be more efficient and user friendly by reducting the number of API calls and improving the response
-    \item Reviewed hundreds of pull requests as a primary reviewer for our public api repository
+% Migrated session and image APIs
+    \item Revamped cache logic for a high-profile client, resulting in a significant reduction in the overall load on our backend service and an improvement in the user experience
+    % \item Revamped our clients caching strategy by adding automatic refresh and fallback logic
+    \item Implemented an AWS Lambda function to handle automatic image scaling and storage in S3, resulting in improved image delivery times and reduced infrastructure costs
+    \item Successfully remedied production PagerDuty alerts while on call by utilizing tools such as New Relic and Sumo Logic to quickly identify the root cause and take appropriate actions, minimizing downtime and ensuring high system availability for critical services
+    % \item Overhauled our platforms image APIs to be more efficient and user friendly by reducing the number of API calls and improving the response body
+    \item Led the overhaul of our platform's image APIs to optimize efficiency and user experience by cutting the number of API calls in half and improving the response body
+    \item Reviewed and provided feedback on hundreds of pull requests as a primary reviewer for a public API repository, ensuring adherence to best practices and maintaining high code quality standards
 \end{itemize}}
 %------------------------------------------------
 \entry
@@ -103,12 +106,15 @@ Worked on the Genesys Cloud Public API team.https://www.overleaf.com/project/5bf
 {Genesys}
 {Indianapolis, Indiana}
 {Software Engineer, Intern\\
-Worked on the PureCloud plateform Public API team.
+Worked on the Genesys Cloud platform Public API team.
 \begin{itemize}
-    \item Improved the Public API's property management system by creating a class that handled retrieving properties from local YAML files and a Amazon DynamoDB instance
+    % \item Improved the Public API's property management system by creating a class that handled retrieving properties from local YAML files and a Amazon DynamoDB instance
+    \item Improved our Public API's property management system by creating a new class that streamlined property retrieval from local YAML files and DynamoDB, resulting in increased stability for the platform
     \item Explored new ways to automate version bumping using Jenkins and Grunt when making commits to a project's master branch
-    \item Developed my skills in a DevOps work environment by working on tickets and automating tasks such as building, testing, and deploying software
-    \item Built additions for software that had a codebase of over half a million lines of code
+    % \item Developed my skills in a DevOps work environment by working on tickets and automating tasks such as building, testing, and deploying software
+    \item Advanced proficiency in a DevOps work environment through the completion of tickets and automation of tasks such as building, testing, and deploying software, resulting in more and higher quality software releases
+    
+    % \item Built additions for software that had a codebase of over half a million lines of code
     \item Accelerated the development process by using development tools such as Maven, Git, IntelliJ IDEA, and Jenkins
 \end{itemize}}
 %------------------------------------------------
@@ -140,9 +146,10 @@ Worked on the PureCloud plateform Public API team.
 {Rust}
 {Developed a program to securely store password using rust\\
 \begin{itemize}
-    \item 
-    \item 
-    \item 
+    \item Developed a Rust-based password manager using the argon2 hashing algorithm and a SQLite database for secure password storage and retrieval
+    \item Utilized generics and zero-sized types to ensure the password manager's APIs could not be misused, increasing the overall security of the application
+    \item Implemented best practices for password security, including salting and iterating the argon2 algorithm, providing industry-standard security to users
+    \item Conducted rigorous testing and code review to ensure the password manager was stable and secure, resulting in a reliable and user-friendly application
 \end{itemize}}
 
 % %------------------------------------------------
@@ -182,7 +189,6 @@ Worked on the PureCloud plateform Public API team.
 {2017--2020}
 {B.Sc. {\normalfont in Computer Science}}
 {University of Michigan - Ann Arbor}
-{Relevant courses: Algorithms \& Data Structures, Databases}
 {\vspace{-0.3cm}}
 %------------------------------------------------
 \entry
